@@ -25,20 +25,20 @@
                     <li class="exit-btn hide-desktop" id="exit">
 	                	<a href="#"><img src="images/exit.svg" alt="exit menu"></a>
 	            	</li>                    
-                    <li>
-	                	<a href="#"><img src="images/home.png"><span>Acceuil</span></a>
+                    <li class="lien target">
+	                	<a href="#"><img src="images/home.png"><span class="hide-desktop">Acceuil</span></a>
 	            	</li>
 	            	<li>
-	                	<a href="#"><img src="images/picture.png"><span>Gallerie</span></a>
+	                	<a href="#"><img src="images/picture.png"><span class="hide-desktop">Gallerie</span></a>
 	            	</li>
 	            	<li>
-	                	<a href="#"><img src="images/article.png"><span>Acticle</span></a>
+	                	<a href="#"><img src="images/article.png"><span class="hide-desktop">Acticles</span></a>
 	            	</li>
 	            	<li>
-	                	<a href="#"><img src="images/blog.png"><span>Blog</span></a>
+	                	<a href="#"><img src="images/blog.png"><span class="hide-desktop">Blog</span></a>
 	            	</li>
 	            	<li>
-	                	<a href="#"><img src="images/contact.png"><span>Contact</span></a>
+	                	<a href="#"><img src="images/contact.png"><span class="hide-desktop">Contact</span></a>
 	            	</li>
 	            </ul>
 	        </nav>
@@ -108,7 +108,21 @@
         </div>
     </footer>
 
-    
+    <script>
+        var exit = document.getElementById('exit');
+        var nav = document.getElementById('nav');
+        var menu = document.getElementById('menu');
+
+        menu.addEventListener('click',function(e){
+            nav.classList.toggle("hide-mobile");
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click',function(e){
+            nav.classList.toggle("hide-mobile");
+            e.preventDefault();
+        });
+    </script>    
 	
 </body>
 </html>
