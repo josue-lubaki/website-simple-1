@@ -58,7 +58,7 @@ body > .container a{
 /********* Partie Slide **********/
 .slide{
     /* ajout d'une image */
-    background-image: url('../images/Fotolia.jpg');
+    background-image: url('https://raw.githubusercontent.com/josue-lubaki/website-simple-1/main/images/Fotolia.jpg');
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
