@@ -58,7 +58,7 @@ body > .container a{
 /********* Partie Slide **********/
 .slide{
     /* ajout d'une image */
-    background-image: url('/images/Fotolia.jpg');
+    background-image: url('../images/Fotolia.jpg');
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
